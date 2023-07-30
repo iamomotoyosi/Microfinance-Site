@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(60,
+        0, 160, 0.307), rgba(60, 0, 160, 0.307)), url(images/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 100px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.nav-links ul li a:hover {
+  background: #3c00a0;
+  padding: 8px;
+  border: 2px #3c00a0 solid;
+  color: white;
+  font-size: 20px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20% 8%;
+  color: white;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1100px;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+}
+
+.left{
+  flex-basis: 35%;
+  min-width: 320px;
+  margin-right: 60px;
+}
+
+.right {
+  flex-basis: 60%;
+}
+
+.title h2{
+  position: relative;
+  font-size: 28px;
+  color: #ddd;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.title h2::before{
+  content: '';
+  position: absolute;
+  width:35%;
+  height: 1px;
+  background-color: dodgerblue;
+  top: 120%;
+  left: 0;
+}
+
+.title p{
+  font-size: 17px;
+  color: #ccc;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+  padding-bottom: 22px;
+}
+
+.icongroup{
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  margin: 25px 0px;
+}
+
+.icon{
+  width: 45px;
+  height: 45px;
+  border: 2px solid dodgerblue;
+  border-radius: 50%;
+  margin-right: 20px;
+  position: relative;
+}
+
+.icon i{
+font-size: 20px;
+color: #ddd;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+.icongroup span{
+  display: block;
+  color: #ddd;
+  font-size: 18px;
+}
+
+.socialmedia{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 22px 0px 20px;
+}
+
+.socialmedia a{
+  width: 35px;
+  height: 35px;
+  text-decoration: none;
+  text-align: center;
+  margin-right: 15px;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  transition: 0.4s;
+}
+
+.socialmedia i{
+  color: #ddd;
+  font-size: 18px;
+  line-height: 35px;
+  border:1px solid transparent ;
+  transition: 0.4s;
+}
+
+.socialmedia a:hover{
+  transform: translateY(-5px);
+  background-color: rgba(60,
+    0,
+    160,
+    0.35);
+  color: dodgerblue;
+  border: 1px solid dodgerblue;
+}
+
+.socialmedia a:hover i{
+  color: dodgerblue;
+}
+
+.fullinfo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  pad
+}
+
+.info {
+  margin: 18px 0px;
+  position: relative;
+  flex-basis: 48%;
+}
+
+.message{
+  
+  flex-basis: 100%;
+  padding-top: 30px;
+}
+
+.fullinfo input,.fullinfo textarea{
+  width: 100%;
+  font-size: 18px;
+  padding: 2px 0px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white ;
+  color: #ddd;
+}
+
+.fullinfo textarea{
+  resize: none;
+  height: 220px;
+  display: block;
+}
+
+textarea::-webkit-scrollbar{
+  width: 15px;
+}
+
+textarea::-webkit-scrollbar-track{
+  background-color: #ddd;
+  border-radius: 15px;
+  outline: none;
+}
+
+textarea::-webkit-scrollbar-thumb{
+  background-color: dodgerblue;
+  border-radius: 15px;
+}
+
+.Group button{
+  padding: 8px 6px;
+  font-size: 18px;
+  background-color: dodgerblue;
+  color: #ddd;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.Group button:hover{
+  transform: translateY(-5px);
+    background-color: rgba(60,
+        0,
+        160,
+        0.35);
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+  }
